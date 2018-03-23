@@ -603,4 +603,4 @@ import code
 code.interact(banner = "", local = locals())
 
 
-
+# screen -dmS checker python3 checker.py
