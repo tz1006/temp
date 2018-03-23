@@ -590,7 +590,7 @@ def suspend_checker():
         current = suspend_list()
         if current != last:
             if last != 0:
-                message = '停牌列表更新'
+                message = '停牌列表更新%s' % current
                 log.suspend(message)
                 sms.send(message)
             last = current
