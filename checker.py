@@ -478,7 +478,6 @@ class logging():
         pool.submit(self.write)
     def write(self):
         self.list = []
-        print(1)
         while True:
             if len(self.list) == 0:
                 time.sleep(5)
@@ -597,6 +596,8 @@ def suspend_checker():
             last = current
         time.sleep(300)
 
+
+print('suspend_checker()')
 
 import code
 code.interact(banner = "", local = locals())
